@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import themeStore from '../store/themeStore';
 import authStore from '../store/authStore';
+import AlertDialogDemo from '../components/AlertDialogDemo';
 
 const Landing = () => {
 
@@ -21,7 +22,10 @@ const Landing = () => {
         theme === 'dark' ? 'text-gray-400 hover:text-[#6a4dfa]' : 'text-gray-600 hover:text-[#6a4dfa]'
         }`}>
         Welcome to ProfitView {isLoggedIn ? "True" : "False"}
-        </h1>
+        
+      </h1>
+
+      <AlertDialogDemo/>
 
 
     </div>
